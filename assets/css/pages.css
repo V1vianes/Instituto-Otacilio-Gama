@@ -1,0 +1,489 @@
+/* ======== CSS DAS PÁGINAS SECUNDÁRIAS ======== */
+/* Quem somos, Atividades, Notícias, Transparência, Apoie e Contato */
+
+/* ======== PÁGINA QUEM SOMOS ======== */
+
+/* Missão */
+.missao {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--gap-x);
+}
+
+.missao .subsubtitulo {
+  font-size: var(--font-s);
+}
+
+.missao li {
+  margin: 0 0 1.5% 3%;
+}
+
+/* História */
+.historia {
+  background-color: var(--background3);
+}
+
+.historia__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+  position: relative;
+}
+
+.historia__linha-central {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.historia__linha-do-tempo {
+  display: flex;
+  justify-content: start;
+}
+
+.historia__linha-do-tempo2 {
+  display: flex;
+  justify-content: end;
+}
+
+.historia__eventos {
+  width: 50%;
+  position: relative;
+  text-align: end;
+}
+
+.historia__eventos2 {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  position: relative;
+}
+
+.historia__marcador {
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow-x);
+  position: absolute;
+  right: -1.2%;
+  margin-top: 27%;
+}
+
+.historia__marcador2 {
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow-x);
+  position: absolute;
+  left: -1.2%;
+  margin-top: 27%;
+}
+
+.historia__evento {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  background-color: var(--white);
+  border-radius: var(--border-rs);
+  box-shadow: var(--shadow-x);
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+}
+
+.historia img {
+  border-radius: var(--border);
+}
+
+/* Otacílio */
+
+.otacilio {
+  padding-top: 5%;
+}
+
+.otacilio__historia {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-x);
+  width: 140%;
+}
+
+/* Equipe */
+
+.equipe {
+  background-color: var(--background3);
+}
+
+/* Informações Institucionais */
+
+.informacoes-institucionais {
+  display: flex;
+  gap: var(--gap-s);
+  justify-content: center;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  border-radius: var(--border-rs);
+  background-color: var(--background3);
+  width: 26rem;
+  height: 15rem;
+  padding: 2.5%;
+}
+
+.informacoes h3 {
+  font-family: var(--font);
+  font-weight: 600;
+}
+
+/* Faça Parte */
+.faca-parte {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.faca-parte h2 {
+  font-size: var(--font-m);
+}
+
+.faca-parte .botao {
+  color: var(--primary-color);
+  background: var(--white);
+  padding: 1.4% 2%;
+}
+
+/* ======== PÁGINA ATIVIDADES ======== */
+.atividades__menu {
+  position: sticky;
+  top: 100px;
+  background-color: var(--white);
+  backdrop-filter: blur(100px);
+  border-bottom: 1px solid #daf1e0;
+  z-index: 999;
+}
+
+.atividades__secao .conteudo2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.atividades {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: 140%;
+}
+
+.atividade {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: 4%;
+  background-color: var(--background3);
+}
+
+.atividade__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  opacity: var(--opacity);
+  font-size: var(--font-xxs);
+}
+
+.atividade__info h4 {
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.atividade__horario {
+  grid-column: 1 / -1;
+}
+
+.atividade li {
+  margin: 0 0 1.5% 3%;
+}
+
+.atividade__instrutor {
+  grid-column: 1 / -1;
+}
+
+.atividade__faixa {
+  grid-column: 2;
+  grid-row: 1 / span 1;
+}
+
+.atividades .secao__botao {
+  text-align: start;
+}
+
+/* ======== PÁGINA NOTÍCIAS ======== */
+
+.inicio__pesquisa {
+  width: 33%;
+  padding: 1%;
+  opacity: var(--opacity);
+  font-weight: 500;
+  align-self: center;
+  border-radius: var(--border);
+  border: 1px solid #d1d4d2;
+}
+
+.inicio__pesquisa:focus {
+  box-shadow: 0 0 0 2.5px var(--primary-color);
+}
+
+/* ======== PÁGINA TRANSPARÊNCIA ======== */
+
+.transparencia {
+  background: var(--background3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  padding: 2%;
+  border-radius: var(--border-rs);
+}
+
+.transparencia h2 {
+  font-family: var(--font);
+}
+
+.transparencia__compromisso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-s);
+}
+
+.transparencia__compromisso div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.transparencia__compromisso p {
+  opacity: var(--opacity);
+  line-height: 1.6;
+}
+
+/* ======== APOIE UM ATLETA ======== */
+
+.apoie {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-l);
+  padding-top: 3.5%;
+}
+
+.apoie__como {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.apoie__passo {
+  background-color: var(--primary-color);
+  padding: 4% 6%;
+  border-radius: 100%;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.um {
+  background-color: color-mix(in srgb, var(--primary-color) 80%, black 25%);
+  padding: 4% 6.8%;
+}
+
+.dois {
+  background-color: color-mix(in srgb, var(--primary-color) 80%, black 15%);
+  padding: 4% 6.2%;
+}
+
+.apoie__aviso {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  background: #fbf2e6c4;
+  color: #854d0e;
+  width: 55%;
+  padding: 1%;
+  border-left: 4px solid #ffd900;
+  gap: var(--gap);
+}
+
+.apoie__aviso h3 {
+  font-size: var(--font-xxs);
+  font-weight: 500;
+}
+
+.apoie__aviso li {
+  margin: 0 0 1% 2.5%;
+  font-size: var(--font-xxxs);
+}
+
+.atletas {
+  background-color: var(--background3);
+}
+
+/* ======== CONTATO ======== */
+
+.pagina-contato {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gap-m);
+  padding: 6.5% 0;
+}
+
+.pagina-contato .subtitulo {
+  font-size: var(--font-sm);
+}
+
+.pagina-contato__informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.pagina-contato__contato {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.pagina-contato__icone {
+  border-radius: var(--border);
+  font-size: var(--font-s);
+  width: 3.1rem;
+  height: 3.1rem;
+  padding: 12%;
+}
+
+.pagina-contato__dados {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxs);
+}
+
+.pagina-contato__dados h3 {
+  font-size: var(--font-xx);
+  font-weight: 600;
+}
+
+.pagina-contato__dados a {
+  text-decoration: none;
+  color: var(--black);
+  opacity: var(--opacity);
+}
+
+.pagina-contato__dados p {
+  opacity: var(--opacity);
+}
+
+.whatsapp {
+  color: var(--white);
+  font-size: var(--font-sm);
+  background-color: #25d366;
+  padding: 0.45rem 0.48rem 0.48rem 0.72rem;
+}
+
+.telefone {
+  background-color: var(--primary-color);
+  padding: 0.45rem 0.48rem 0.48rem 0.55rem;
+}
+
+.email {
+  background-color: #f97316;
+  padding: 0.45rem 0.48rem 0.48rem 0.55rem;
+}
+
+.horario-atendimento {
+  background-color: var(--primary-light);
+  padding: 0.45rem 0.48rem 0.48rem 0.55rem;
+}
+
+.endereco {
+  background-color: #8b5cf6;
+  padding-left: 20%;
+  padding: 0.45rem 0.48rem 0.48rem 0.95rem;
+}
+
+.pagina-contato__mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.pagina-contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.pagina-contato__campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxs);
+}
+
+.pagina-contato__campo label {
+  font-weight: 600;
+  opacity: var(--opacity);
+  font-size: var(--font-xxs);
+}
+
+.pagina-contato__campo input {
+  border: none;
+  padding: 0.9rem;
+  border: 0.5px solid #d1d4d2;
+  border-radius: var(--border);
+  font-size: 100%;
+  font-family: var(--font-family);
+}
+
+.pagina-contato__campo input:focus {
+  box-shadow: 0 0 0 2.5px var(--primary-color);
+}
+
+#assunto {
+  padding: 0.8rem;
+  border: 0.5px solid #d1d4d2;
+  border-radius: var(--border);
+  font-size: 100%;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+#assunto:focus {
+  box-shadow: 0 0 0 2.5px var(--primary-color);
+}
+
+#mensagem {
+  width: 100%;
+  height: 10rem;
+  border: 0.5px solid #d1d4d2;
+  border-radius: var(--border);
+  font-size: 100%;
+  font-family: var(--font-family);
+}
+
+#mensagem:focus {
+  box-shadow: 0 0 0 2.5px var(--primary-color);
+}
+
+.pagina-contato__botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 1rem;
+}
