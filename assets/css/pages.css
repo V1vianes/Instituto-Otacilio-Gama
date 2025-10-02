@@ -7,7 +7,7 @@
 .missao {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   gap: var(--gap-x);
 }
 
@@ -72,7 +72,7 @@
   background-color: var(--primary-color);
   box-shadow: var(--shadow-x);
   position: absolute;
-  right: -1.2%;
+  right: -1.6%;
   margin-top: 27%;
 }
 
@@ -84,7 +84,7 @@
   background-color: var(--primary-color);
   box-shadow: var(--shadow-x);
   position: absolute;
-  left: -1.2%;
+  left: -1.6%;
   margin-top: 27%;
 }
 
@@ -166,7 +166,7 @@
 /* ======== PÁGINA ATIVIDADES ======== */
 .atividades__menu {
   position: sticky;
-  top: 100px;
+  top: 80px;
   background-color: var(--white);
   backdrop-filter: blur(100px);
   border-bottom: 1px solid #daf1e0;
@@ -182,7 +182,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  width: 140%;
+  width: 60%;
 }
 
 .atividade {
@@ -486,4 +486,17 @@
   align-items: center;
   border: none;
   margin-top: 1rem;
+}
+
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.error {
+  border-color: #e74c3c !important;
+}
+
+.success {
+  border-color: var(--secondary-color) !important;
 }

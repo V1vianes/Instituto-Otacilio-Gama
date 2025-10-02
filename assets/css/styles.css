@@ -13,12 +13,12 @@
   --font-xxxs:0.8rem;
   --font-xxs: 0.9rem;
   --font-xx: 1rem;
-  --font-x: 1.25rem;
+  --font-x: 1.10rem;
   --font-s: 1.5rem;
   --font-sm: 1.9rem;
   --font-m: 2.2rem;
   --font-l: 2.8rem;
-  --font-xl: 3.75rem;
+  --font-xl: 3.50rem;
 
   /* Cores */
 
@@ -67,6 +67,7 @@ body {
   color: var(--black);
   background-color: var(--white);
   height: 100vh;
+  background-size: cover;
 }
 
 .container {
@@ -110,7 +111,7 @@ body {
 
 .nav-lista {
   display: flex;
-  gap: var(--gap-m);
+  gap: var(--gap-s);
   list-style: none;
 }
 
@@ -147,12 +148,15 @@ body {
   color: var(--black);
 }
 
+.container3 {
+  padding-top: 7%;
+}
+
 .titulo {
   font-family: var(--font);
   font-size: var(--font-xl);
   font-weight: 700;
-  margin-top: 3.5rem;
-  line-height: 4rem;
+  line-height: 3.6rem;
   text-align: center;
 }
 
@@ -165,8 +169,8 @@ body {
 }
 
 .inicio__descricao {
-  font-size: var(--font-x);
-  line-height: 1.75rem;
+  font-size: var(--font-xx);
+  line-height: 1.50rem;
   opacity: var(--opacity);
   text-align: center;
 }
@@ -177,7 +181,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--gap-m);
-  padding: 7% 0 5% 0;
+  padding: 5% 0;
 }
 
 .conteudo2 {
@@ -197,7 +201,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  padding-top: 2.5%;
 }
 
 .descricao span {
@@ -253,12 +256,13 @@ body {
   all: unset;
   background-color: #f3f4f6;
   color: var(--grey);
-  font-size: 100%;
+  font-size: 90%;
   font-weight: 500;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: var(--border);
   transition: 0.3s ease;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .menu__botao:hover {
@@ -294,8 +298,8 @@ body {
 .imagem {
   display: flex;
   justify-content: center;
-  width: 140%;
-  padding: 3% 0 2% 1%;
+  width: 34rem;
+  height: 25rem;
 }
 
 .imagem__foto {
@@ -320,7 +324,7 @@ body {
 
 .rodape__conteudo {
   display: flex;
-  gap: 8%;
+  gap: 5%;
 }
 
 .rodape__secao {
@@ -343,7 +347,7 @@ body {
 .rodape__secao2 {
   display: flex;
   white-space: nowrap;
-  gap: 30%;
+  gap: 10%;
 }
 
 .rodape__redes {
@@ -442,16 +446,20 @@ body {
 /* ======== PÁGINA INICIAL ======== */
 
 /* == INÍCIO == */
+.container2 {
+  padding: 11% 0;
+}
 
 .inicio__conteudo {
   display: flex;
-  padding: 9% 0 12% 0;
+  gap: 3rem;  
 }
 
 .inicio__introducao {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-s);
+  gap: var(--gap);
+  width: 50%;
 }
 
 .inicio__introducao .titulo {
@@ -470,8 +478,8 @@ body {
 .inicio__conteudo__textoimg {
   background-color: var(--white);
   box-shadow: var(--shadow-s);
-  width: 21%;
-  height: 17%;
+  width: 24%;
+  height: 18%;
   position: absolute;
   left: -5%;
   top: -5%;
@@ -482,8 +490,8 @@ body {
 .inicio__conteudo__textoimg2 {
   background-color: white;
   box-shadow: var(--shadow-s);
-  width: 22%;
-  height: 17%;
+  width: 28%;
+  height: 19%;
   position: absolute;
   right: -5%;
   bottom: -5%;
@@ -541,14 +549,15 @@ body {
 }
 
 .o-que-fazemos__categoria {
-  display: flex;
+  display: grid;
   flex-direction: column;
+  width: 100%;
   gap: var(--gap);
   background-color: var(--white);
   border-radius: var(--border-rs);
   box-shadow: var(--shadow-x);
-  width: 26.5rem;
-  height: 17rem;
+  width: 100%;
+  height: 100%;
   padding: 8.5%;
   transition: transform 0.2s ease;
 }
@@ -624,21 +633,8 @@ body {
 }
 
 /* =========================== */
-/* Estados de Loading e Erro */
-.loading {
-  opacity: 0.7;
-  pointer-events: none;
-}
 
-.error {
-  border-color: #e74c3c !important;
-}
-
-.success {
-  border-color: var(--secondary-color) !important;
-}
-
-/* Melhorias de Acessibilidade */ /* Verificar compatibilidade depois */
+/* Acessibilidade */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -664,10 +660,7 @@ body {
 }
 
 /* Compatibilidade */
-@media (max-width: 900px) {
-  .inicio__conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+@media (max-width: 1024px) {
+
+
 }
