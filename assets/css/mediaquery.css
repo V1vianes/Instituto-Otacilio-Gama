@@ -122,5 +122,14 @@
     .links-rapidos {
         display: none;
     }
+    
+    .rodape__direitos{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 13px;
+    }
 
+    .politica{
+        text-align: left;
+    }
 }
