@@ -1,25 +1,25 @@
-@media(max-width: 1024px){
-    .cabecalho__conteudo{
+@media(min-width: 481px) and (max-width: 1024px) {
+    .cabecalho__conteudo {
         gap: var(--gap-s);
     }
-    
+
     .nav-lista {
         gap: var(--gap-x);
     }
-     
+
     .cabecalho .link {
         font-size: 0.8rem;
     }
 
-    .textoimg__texto{
-        font-size:var(--font-xxxs) ;
+    .textoimg__texto {
+        font-size: var(--font-xxxs);
     }
 
     .inicio__conteudo__textoimg2 {
         width: 30%;
     }
 
-    .rodape__conteudo{
+    .rodape__conteudo {
         gap: var(--gap-s);
     }
 
@@ -28,7 +28,7 @@
     }
 
     .rodape__secao2 {
-        gap: var(--gap-m) ;
+        gap: var(--gap-m);
         justify-content: left;
     }
 
@@ -43,4 +43,84 @@
     .rodape .texto2 {
         font-size: 0.9rem;
     }
+}
+
+
+@media (max-width: 480px) {
+    .nav-lista {
+        font-size: 5px;
+    }
+
+    .inicio__conteudo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inicio__introducao {
+        width: 100%;
+    }
+
+    .inicio__introducao .titulo {
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: var(--font-l);
+        line-height: 1;
+    }
+
+    .inicio__introducao .inicio__descricao {
+        text-align: center;
+    }
+
+    .inicio__botao {
+        justify-content: center;
+    }
+
+    .imagem {
+        width: 28rem;
+        height: 19rem;
+        justify-content: flex-start;
+    }
+
+    .imagem__foto {
+        min-width: 250px;
+        width: 80%;
+    }
+
+    .subtitulo {
+        font-size: var(--font-m);
+    }
+
+    .impacto__itens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .o-que-fazemos__categorias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .o-que-fazemos__contato {
+        width: 20rem;
+    }
+
+    .rodape__conteudo {
+        flex-direction: column;
+    }
+
+    .rodape__secao {
+        width: 100%;
+    }
+
+    .rodape__secao2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .links-rapidos {
+        display: none;
+    }
+
 }

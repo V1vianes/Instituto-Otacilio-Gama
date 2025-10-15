@@ -665,9 +665,3 @@ body {
     scroll-behavior: auto;
   }
 }
-
-/* Compatibilidade */
-@media (max-width: 1024px) {
-
-
-}
