@@ -1,0 +1,46 @@
+@media(max-width: 1024px){
+    .cabecalho__conteudo{
+        gap: var(--gap-s);
+    }
+    
+    .nav-lista {
+        gap: var(--gap-x);
+    }
+     
+    .cabecalho .link {
+        font-size: 0.8rem;
+    }
+
+    .textoimg__texto{
+        font-size:var(--font-xxxs) ;
+    }
+
+    .inicio__conteudo__textoimg2 {
+        width: 30%;
+    }
+
+    .rodape__conteudo{
+        gap: var(--gap-s);
+    }
+
+    .rodape__secao {
+        width: 38%;
+    }
+
+    .rodape__secao2 {
+        gap: var(--gap-m) ;
+        justify-content: left;
+    }
+
+    .rodape__secao2 p {
+        font-size: 0.9rem;
+    }
+
+    .rodape .link {
+        font-size: 0.9rem;
+    }
+
+    .rodape .texto2 {
+        font-size: 0.9rem;
+    }
+}

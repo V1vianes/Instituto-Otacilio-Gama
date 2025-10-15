@@ -1,0 +1,25 @@
+STYL(E).CSS=
+/*
+Theme Name: Meu Tema
+Author: Viviane
+Version: 1.0
+*/
+
+
+FUNCTIONS.PHP =
+<?php
+function meu_tema_scripts() {
+    wp_enqueue_style('meu-estilo', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'meu_tema_scripts');
+
+
+INDEX.PHP =
+
+<HEAD> <?php wp_head(); ?>  </HEAD>
+
+<BODY> <?php wp_footer(); ?> </BODY> PERTINHO DO FOOTER.
+
+
+COLOCAR NA TAG IMG, ANTES DA BARRA DA PASTA =
+<?php echo get_template_directory_uri(); ?>

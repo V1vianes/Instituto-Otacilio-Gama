@@ -1,0 +1,22 @@
+   {
+      titulo: 'IOG sedia 1ª Copa de Judô com mais de 200 atletas',
+      resumo: 'O Instituto Otacílio Gama realizou sua primeira Copa de Judô, reunindo atletas de toda a região.',
+      imagem: '/lovable-uploads/124516a2-2e28-4ad6-8ddc-d52fd4011ad8.png',
+      data: '15 de Dezembro de 2024',
+      slug: 'copa-judo-2024' // Usado para criar URL amigável
+    },
+    {
+      titulo: 'Conheça a história de superação de Joana',
+      resumo: 'A jovem Joana descobriu no ballet uma forma de expressar seus sentimentos e superar desafios.',
+      imagem: '/lovable-uploads/44f03df2-7551-4747-8845-5754cb9190e1.png',
+      data: '10 de Dezembro de 2024',
+      slug: 'historia-joana-ballet'
+    },
+    {
+      titulo: 'Novo laboratório de informática',
+      resumo: 'Com a inauguração do novo laboratório, o IOG pode atender o dobro de alunos.',
+      imagem: '/lovable-uploads/6321e6ac-db6b-4982-be60-c16d8aa32504.png',
+      data: '5 de Dezembro de 2024',
+      slug: 'novo-laboratorio-informatica'
+    }
+  ];

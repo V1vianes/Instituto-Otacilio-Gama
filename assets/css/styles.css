@@ -20,6 +20,7 @@
   --font-l: 2.8rem;
   --font-xl: 3.50rem;
 
+  
   /* Cores */
 
   /* #009C3B <- verde bandeira  #00b588 <- verde da logo */
@@ -93,6 +94,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--gap-l);
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -113,6 +115,7 @@ body {
   display: flex;
   gap: var(--gap-s);
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .cabecalho .link {
@@ -121,6 +124,7 @@ body {
   font-weight: 500;
   transition: 0.3s ease;
   position: relative;
+  flex-wrap: nowrap;
 }
 
 .cabecalho .link:hover {
@@ -324,13 +328,14 @@ body {
 
 .rodape__conteudo {
   display: flex;
-  gap: 5%;
+  gap: 6rem;
+  width: 100%;
 }
 
 .rodape__secao {
   display: flex;
   flex-direction: column;
-  width: 44%;
+  width: 50%;
   gap: var(--gap-x);
 }
 
@@ -347,7 +352,9 @@ body {
 .rodape__secao2 {
   display: flex;
   white-space: nowrap;
-  gap: 10%;
+  justify-content: right;
+  gap: 3rem;
+  width: 50%;
 }
 
 .rodape__redes {
