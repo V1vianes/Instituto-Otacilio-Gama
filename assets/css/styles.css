@@ -552,7 +552,7 @@ body {
 .o-que-fazemos__categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gap-s);
 }
 
 .o-que-fazemos__categoria {
