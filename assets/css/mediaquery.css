@@ -44,7 +44,7 @@
     }
 
     .nav-lista {
-        font-size: 5px;
+        font-size: 0.8rem;
     }
 
     .logo {
@@ -55,7 +55,7 @@
         padding-top: 10%;
     }
 
-    .inicio .titulo{
+    .inicio .titulo {
         font-size: 2.3rem;
     }
 
@@ -293,10 +293,44 @@
         line-height: 2rem;
     }
 
-    .faca-parte .botao{
+    .faca-parte .botao {
         padding: 2% 15%;
     }
 
+
+    /* ========== ATIVIDADES =============*/
+
+    .menu {
+        gap: var(--gap-xxs);
+        flex-wrap: wrap;
+    }
+
+    .menu__botao {
+        padding: 0.5rem;
+        font-size: 80%;
+    }
+
+    .atividades__secao .conteudo2 {
+        flex-direction: column;
+
+    }
+
+    .atividades {
+        width: 100%;
+        text-align: center;
+    }
+
+    .atividade {
+        text-align: left;
+    }
+
+    .atividades .botao {
+        padding: 1% 10%;
+    }
+
+    .atividades .secao__botao {
+        text-align: center;
+    }
 }
 
 
