@@ -243,7 +243,7 @@
 
 /* ======== PÁGINA NOTÍCIAS ======== */
 
-.inicio__pesquisa {
+.inicio__pesquisanoticias {
   width: 33%;
   padding: 1%;
   opacity: var(--opacity);
@@ -253,7 +253,7 @@
   border: 1px solid #d1d4d2;
 }
 
-.inicio__pesquisa:focus {
+.inicio__pesquisanoticias:focus {
   box-shadow: 0 0 0 2.5px var(--primary-color);
 }
 

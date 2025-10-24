@@ -148,7 +148,7 @@
     }
 
 
-    /* =========== PÁGINA INICIAL ============*/
+    /* =========== PÁGINA INICIAL ===========*/
 
     .inicio__conteudo {
         padding-top: 10%;
@@ -231,7 +231,7 @@
 
 
 
-    /* ========== PAGINA QUEM SOMOS =============*/
+    /* ========== PÁGINA QUEM SOMOS ===========*/
 
 
 
@@ -298,7 +298,7 @@
     }
 
 
-    /* ========== ATIVIDADES =============*/
+    /* ========== PÁGINA ATIVIDADES =========*/
 
     .menu {
         gap: var(--gap-xxs);
@@ -331,7 +331,18 @@
     .atividades .secao__botao {
         text-align: center;
     }
+
+
+        /* ======== PÁGINA NOTICIA ======== */
+    .inicio__pesquisanoticias {
+        width: 60%;
+
+
+    }
+
+
 }
+
 
 
 
