@@ -336,11 +336,43 @@
         /* ======== PÁGINA NOTICIA ======== */
     .inicio__pesquisanoticias {
         width: 60%;
-
-
     }
 
+    /* ======== PÁGINA TRANSPARÊNCIA ======== */
 
+    .transparencia h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .transparencia__compromisso {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transparencia h3 {
+        font-size: var(--font-xx);
+    }
+
+    .transparencia p {
+        font-size: var(--font-xxxs);
+    }
+
+    /* ======== PÁGINA CONTATO ======== */
+
+    .pagina-contato {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 3%;
+    }
+
+    .pagina-contato .subtitulo {
+        line-height: 1;
+        font-size: 1.7rem;
+    }
+
+    .pagina-contato__dados {
+        margin-left: 1.5rem;
+    }
 }
 
 
